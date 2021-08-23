@@ -1,0 +1,140 @@
+.main-menu {
+    margin-left: -20px;
+    
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+/* =========== top menu ================= */
+
+.main-menu__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    overflow: hidden;
+    background: rgba(7, 6, 46, 1);
+}
+
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+.main-menu__top a, .main-menu__top li {
+    color: rgba(175, 171, 202, 1);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main-menu__top a {
+    margin-right: 60px;
+}
+
+.main-menu__language-block li {
+    margin-left: 8px;
+    display: flex;
+    align-self: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* =========== center menu ================= */
+
+.main-menu__center {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    overflow: hidden;
+    background: rgba(17, 24, 58, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu__center.main-menu__left-block {
+    display: flex;
+    height: 100%;
+}
+
+.main-menu__center a {
+    margin-right: 60px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.main-menu__center li {
+    align-self: center;
+}
+
+.main-menu__center a:hover {
+    color: #00b2ff;
+}
+
+.main-menu__center a:active {
+    color: #00b2ff;
+    border-bottom: 3px solid #02b0ff;
+}
+
+#main_menu_more {
+    width: 120px;
+    height: 44px;
+    border-radius: 30px;
+    background-image: linear-gradient(#0c1022e6, #0c1022e6), linear-gradient(90deg, #02B0FF 0%, #8F00FF 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #02B0FF 0%, #8F00FF 100%);
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;  
+ }
+
+ #main_menu_more option {
+    background: linear-gradient(270.16deg, #00B2FF 0.11%, #8F00FF 99.83%);
+ }
+
+/* =========== bottom menu ================= */
+
+.main-menu__bottom {
+    background: rgba(7, 6, 46, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: scroll;
+    height: 40px;
+    
+}
+
+.main-menu__bottom ul {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.main-menu li {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.main-menu__bottom a:active {
+    color: #00b2ff;
+    border-bottom: 3px solid #02b0ff;
+}
+
