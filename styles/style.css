@@ -76,6 +76,10 @@ body {
     background: #07062E;
 }
 
+.footer img {
+    width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
     .header {
         min-height: 446px;

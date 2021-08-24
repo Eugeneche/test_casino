@@ -1,0 +1,13 @@
+.new-games {
+    background: url(../img/parts/wawe_bg_2.png) 50% 0 no-repeat;
+    
+}
+
+.new-games::before {
+    display: block;
+    content: '';
+    top: 150px;
+    padding-top: 150px;
+    margin: 50px;
+    background: linear-gradient(258.64deg, #4E3A7A 1.78%, #2D1660 90.85%) 50% 50%;
+}

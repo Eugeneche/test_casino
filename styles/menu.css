@@ -138,3 +138,11 @@
     border-bottom: 3px solid #02b0ff;
 }
 
+/* ====================== */
+
+@media screen and (min-width: 1920px) {
+    .main-menu__top, .main-menu__center, .main-menu__bottom {
+        padding: 0 calc((100% - 1920px) / 2);
+    }
+}
+
