@@ -54,7 +54,6 @@
     display: flex;
     align-items: center;
     height: 100%;
-    cursor: pointer;
 }
 
 select[id="languages"] {
@@ -72,6 +71,7 @@ select[id="languages"] {
     letter-spacing: 0em;
     right: 20px;
     margin-left: 10px;
+    cursor: pointer;
  }
 
  label[for="languages"] {
@@ -98,8 +98,6 @@ select[id="languages"] {
  select[id="languages"] option {
     color: #000000e6;
     text-transform: uppercase;
-    border: 5px solid #07062e;
-    border-radius: 10px;
  }
 
  select[id="languages"] option[selected] {
@@ -164,6 +162,7 @@ select[id="languages"] {
     font-weight: 900;
     text-transform: uppercase;
     color: #ffffff;  
+    outline: none;
  }
 
  #main_menu_more option {

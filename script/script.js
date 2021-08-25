@@ -1,11 +1,4 @@
-
-//console.log(options)
-
 document.getElementById('languages').addEventListener('change', setLanguage)
-
-function getValue(){
-    let currentValue = document.getElementById('#languages option').value
-}
 
 function setLanguage(){
     let currentValue = document.getElementById('languages').value
