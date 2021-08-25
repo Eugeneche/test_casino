@@ -15,7 +15,7 @@
     align-items: center;
     height: 30px;
     overflow: hidden;
-    background: rgba(7, 6, 46, 1);
+    background: #07062e;
 }
 
 .main-menu ul {
@@ -27,7 +27,7 @@
 }
 
 .main-menu__top a, .main-menu__top li {
-    color: rgba(175, 171, 202, 1);
+    color: #afabca;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -41,13 +41,71 @@
     margin-right: 60px;
 }
 
-.main-menu__language-block li {
+/* .main-menu__language-block li {
     margin-left: 8px;
     display: flex;
     align-self: center;
     height: 100%;
     cursor: pointer;
+} */
+
+.main-menu__language-block {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
 }
+
+select[id="languages"] {
+    position: relative;
+    width: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #afabca;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    right: 20px;
+    margin-left: 10px;
+ }
+
+ label[for="languages"] {
+    color: #afabca;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    margin: 0 5px;
+    display: flex;
+    align-self: center;
+    height: 100%;
+ }
+
+ label[for="languages"] span {
+    margin-right: 10px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+ }
+
+ select[id="languages"] option {
+    color: #000000e6;
+    text-transform: uppercase;
+    border: 5px solid #07062e;
+    border-radius: 10px;
+ }
+
+ select[id="languages"] option[selected] {
+    color: #000000e6;
+    text-transform: uppercase;
+ }
 
 /* =========== center menu ================= */
 
@@ -117,7 +175,7 @@
 .main-menu__bottom {
     background: rgba(7, 6, 46, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    overflow: scroll;
+    overflow: hidden;
     height: 40px;
     
 }
@@ -145,4 +203,3 @@
         padding: 0 calc((100% - 1920px) / 2);
     }
 }
-

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/bg.css">
 </head>
 <body>
+    <header class="header">
     <div class="container">
         <nav class="main-menu">
             <div class="main-menu__top">
@@ -25,11 +26,25 @@
                     <li><a href="#">Loyality</a></li>
                     <li><a href="#">News</a></li>
                 </ul>
-                <ul class="main-menu__language-block">
+<!--                 <ul class="main-menu__language-block">
                     <li>EN</li>
                     <li><img src="img/logo_icons/eng.svg" alt="english language sign"></li>
                     <li><img src="img/logo_icons/arrow_down.svg" alt="language selection"></li>
-                </ul>
+                </ul> -->
+                <div class="main-menu__language-block">
+<!--                     <li>EN</li>
+                    <li><img src="img/logo_icons/eng.svg" alt="english language sign"></li>
+                    <li> -->
+                        <label for="languages"><span>EN</span><span><img src="img/logo_icons/EN.png" alt="language sign"></span></label>
+                        <select id="languages">
+                            <option value="EN" selected>english</option>
+                            <option value="DE">deutsch</option>
+                            <option value="UA">українська</option>
+                            <option value="RU">русский</option>
+                        </select>
+                    <!-- </li> -->
+                    </div>
+
             </div>
             <div class="main-menu__center">
                 <ul class="main-menu__left-block">
@@ -44,7 +59,7 @@
                             <option value="value2">Option 2</option>
                             <option value="value3">Option 3</option>
                             <option value="value4">Option 4</option>
-                          </select>
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -65,19 +80,20 @@
                     <li><a href="#"><img src="img/logo_icons/loto.svg" alt="loto"></a></li>
                     <li><a href="#"><img src="img/logo_icons/fish_games.svg" alt="fish games"></a></li>
                 </ul>
-            </div>
+            </div>           
         </nav>
     </div>
     <div class="container">
-        <header class="header">
+        
             <div class="wrapper">
                 <div class="shihe-left"></div>
                 <h1 class="offer">Get up to $800<br> +4000 free spins</h1>
                 <h3 class="offer__upper-subtitle">Welcome bonus</h3>
                 <h3 class="offer__bottom-subtitle">Demo casino is the best condition for players </h3>
             </div>
-        </header>
+        
     </div>
+</header>
 
     <div class="container content">       
         <div class="showcase">   
@@ -306,5 +322,6 @@
         </header>
     </div>
     
+    <script src="script/script.js"></script>
 </body>
 </html>
