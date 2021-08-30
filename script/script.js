@@ -1,4 +1,4 @@
-document.getElementById('languages').addEventListener('change', setLanguage)
+//document.getElementById('languages').addEventListener('change', setLanguage)
 
 function setLanguage(){
     let currentValue = document.getElementById('languages').value

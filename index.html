@@ -14,56 +14,51 @@
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/bg.css">
+    <link rel="stylesheet" href="styles/customed_select.css">
+    <link rel="stylesheet" href="styles/customed_select_more.css">
 </head>
 <body>
     <header class="header">
     <div class="container">
         <nav class="main-menu">
-            <div class="main-menu__top">
-                <ul class="main-menu__left-block">
+            <div class="main-menu-top">
+                <ul class="main-menu-top__left-block">
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Rules</a></li>
                     <li><a href="#">Loyality</a></li>
                     <li><a href="#">News</a></li>
                 </ul>
-<!--                 <ul class="main-menu__language-block">
-                    <li>EN</li>
-                    <li><img src="img/logo_icons/eng.svg" alt="english language sign"></li>
-                    <li><img src="img/logo_icons/arrow_down.svg" alt="language selection"></li>
-                </ul> -->
-                <div class="main-menu__language-block">
-<!--                     <li>EN</li>
-                    <li><img src="img/logo_icons/eng.svg" alt="english language sign"></li>
-                    <li> -->
-                        <label for="languages"><span>EN</span><span><img src="img/logo_icons/EN.png" alt="language sign"></span></label>
-                        <select id="languages">
-                            <option value="EN" selected>english</option>
-                            <option value="DE">deutsch</option>
-                            <option value="UA">українська</option>
-                            <option value="RU">русский</option>
-                        </select>
-                    <!-- </li> -->
-                    </div>
-
+                <div class="main-menu-top__language-block"></div>
             </div>
-            <div class="main-menu__center">
-                <ul class="main-menu__left-block">
+            <div class="main-menu-center">
+                <ul class="main-menu-center__left-block">
                     <li><a href="#"><img src="img/logo_icons/casino.svg" alt="main logo"></a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Bonuses</a></li>
                     <li><a href="#">Promotions</a></li>
-                    <li>
-                        <!-- <label for="main_menu_more">111</label> -->
-                        <select id="main_menu_more">
-                            <option value="value1" selected>&nbsp;&nbsp;MORE<img src="img/logo_icons/more_select.svg" alt="more options selection"></option>
+                    <li class="more-options">
+<!--                         <select id="main_menu_more">
+                            <option value="value1" selected>MORE<img src="img/logo_icons/more_select.svg" alt="more options selection"></option>
                             <option value="value2">Option 2</option>
                             <option value="value3">Option 3</option>
                             <option value="value4">Option 4</option>
-                        </select>
+                        </select> -->
+
+                        <button id="more-options-btn" class="more-options__btn secondary">more<span class="more-options__arrow">&#710;</span></button>
+                        <div class="more-options__list hidden">
+                            <div class="more-options__option"></div>
+                            <div class="more-options__option more-options__option--selected" data-value="0">
+                                More
+                            </div> 
+                            <div class="more-options__option" data-value="1">First</div>
+                            <div class="more-options__option" data-value="2">Second</div>
+                            <div class="more-options__option" data-value="3">Third</div>
+                            <div class="more-options__option" data-value="4">Fourth</div>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <div class="main-menu__bottom">
+            <div class="main-menu-bottom">
                 <ul>
                     <li><a href="#"><img src="img/logo_icons/popular.svg" alt="popular games"></a></li>
                     <li><a href="#"><img src="img/logo_icons/new.svg" alt="new games"></a></li>
@@ -323,5 +318,7 @@
     </div>
     
     <script src="script/script.js"></script>
+    <script src="script/customed_select.js"></script>
+    <script src="script/select_more.js"></script>
 </body>
 </html>

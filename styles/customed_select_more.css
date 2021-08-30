@@ -1,0 +1,121 @@
+.more-options {
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.more-options__btn {
+    width: 110px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* .more-options__btn--active {
+    width: 110px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border-radius: 15px 15px 0 0;
+}
+ */
+.more-options__arrow {
+    font-size: 46px;
+    font-weight: normal;
+    font-style: normal;
+    transform: scale(1, -1);
+    position: relative;
+    bottom: 14px;
+}
+
+.more-options__list {
+    position: absolute;
+    width: 110px;
+    top: 60px;
+}
+
+
+
+
+
+.more-options__option {
+    font-family: "MullerBoldItalic", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    color: #000000;
+    background: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(90deg, #02B0FF 0%, #8F00FF 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(90deg, #02B0FF 0%, #8F00FF 100%);
+    cursor: pointer;
+}
+
+.more-options__option::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 44px;
+    background: transparent;
+}
+
+.more-options__option:hover {
+    background: #95cfff;
+}
+
+.more-options__option:first-child {
+    height: 22px;
+    background: linear-gradient(270.16deg, #00B2FF 0.11%, #8F00FF 99.83%);
+}
+
+.more-options__option:nth-child(2) {
+    color: grey;
+}
+
+.more-options__option:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom: none;
+}
+
+.more-options__option--selected {
+    font-family: "MullerBoldItalic", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #ffffff;
+    background: linear-gradient(270.16deg, #00B2FF 0.11%, #8F00FF 99.83%);
+}
+
+/* .a { */
+    /* Vector */
+/* width: 16px;
+height: 10px; */
+/* position: absolute; */
+/* left: 0%;
+right: 38.21%;
+top: 19.1%;
+bottom: -19.1%;
+
+background: transparent;
+transform: matrix(0, 1, 1, 0, 0, 0);
+
+
+
+} */
