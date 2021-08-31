@@ -16,16 +16,6 @@
     z-index: 1;
 }
 
-/* .more-options__btn--active {
-    width: 110px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    cursor: pointer;
-    border-radius: 15px 15px 0 0;
-}
- */
 .more-options__arrow {
     font-size: 46px;
     font-weight: normal;
@@ -40,10 +30,6 @@
     width: 110px;
     top: 60px;
 }
-
-
-
-
 
 .more-options__option {
     font-family: "MullerBoldItalic", sans-serif;
@@ -102,20 +88,3 @@
     color: #ffffff;
     background: linear-gradient(270.16deg, #00B2FF 0.11%, #8F00FF 99.83%);
 }
-
-/* .a { */
-    /* Vector */
-/* width: 16px;
-height: 10px; */
-/* position: absolute; */
-/* left: 0%;
-right: 38.21%;
-top: 19.1%;
-bottom: -19.1%;
-
-background: transparent;
-transform: matrix(0, 1, 1, 0, 0, 0);
-
-
-
-} */
