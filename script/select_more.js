@@ -1,4 +1,7 @@
 function selectMore(){
+
+    let moreButton = document.querySelector('.more-options__btn')
+    let optionsBlock = document.querySelector('.more-options__list')
     let optionsList = document.querySelectorAll('.more-options__option')
     optionsList.forEach(option => {
         option.onclick = e => {
@@ -9,22 +12,38 @@ function selectMore(){
             })
             
             e.target.classList.add('more-options__option--selected')
-            document.querySelector('.more-options__btn').innerHTML = 
+            moreButton.innerHTML = 
             `${e.target.innerText}<span class="more-options__arrow">&#710;</span>`
-            console.log(e.target)
-        }        
+            //console.log(e.target)
+        }       
     })
 
-    document.querySelector('.more-options__btn').addEventListener('click', showOtionsList)
+    moreButton.addEventListener('click', showOtionsList)
+    
+    function showOtionsList(event){       
+        event.stopPropagation()
+        optionsBlock.classList.remove('hidden')
+        moreButton.addEventListener('click', hideOtionsList)
+        document.addEventListener('click', hideOtionsList)
+        document.addEventListener('keydown', hideByEsc)
 
-    function showOtionsList(){
-        let optionsBlock = document.querySelector('.more-options__list')
-
-        optionsBlock.classList.contains('hidden') ?
-        optionsBlock.classList.remove('hidden') :
-        optionsBlock.classList.add('hidden')
-
+        moreButton.removeEventListener('click', showOtionsList)
+        //console.log('open')
+        //console.log(event)
     }
+    
+    function hideOtionsList(){
+        moreButton.removeEventListener('click', hideOtionsList)
+        optionsBlock.classList.add('hidden')
+        moreButton.addEventListener('click', showOtionsList)
+        document.removeEventListener('click', hideOtionsList)
+        document.removeEventListener('keydown', hideByEsc)
+        //console.log('close')
+    }
+
+    function hideByEsc(e){
+        e.key === 'Escape' && hideOtionsList()
+    } 
 }
 
 selectMore()
