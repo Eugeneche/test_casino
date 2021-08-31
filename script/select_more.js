@@ -12,13 +12,11 @@ function selectMore(){
             document.querySelector('.more-options__btn').innerHTML = 
             `${e.target.innerText}<span class="more-options__arrow">&#710;</span>`
             console.log(e.target)
-        }
-        
+        }        
     })
 
     document.querySelector('.more-options__btn').addEventListener('click', showOtionsList)
 
-    
     function showOtionsList(){
         let optionsBlock = document.querySelector('.more-options__list')
 
@@ -27,12 +25,7 @@ function selectMore(){
         optionsBlock.classList.add('hidden')
 
     }
-
-    function hideOtionsList(){
-        document.querySelector('.more-options__list').classList.add('hidden')
-    }
-
-    //more-options__list
 }
+
 selectMore()
 
