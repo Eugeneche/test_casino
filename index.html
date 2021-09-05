@@ -11,15 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/bg.css">
     <link rel="stylesheet" href="styles/select_language.css">
     <link rel="stylesheet" href="styles/select_more.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header class="header">
-    <div class="container">
+
         <nav class="main-menu">
             <div class="main-menu-top">
                 <ul class="main-menu-top__left-block">
@@ -32,12 +34,13 @@
             </div>
             <div class="main-menu-center">
                 <ul class="main-menu-center__left-block">
-                    <li><a href="#"><img src="img/logo_icons/casino.svg" alt="main logo"></a></li>
+                    <li class="main-menu-center__hamburger"><img src="img/logo_icons/hamburger.svg" alt="hamburger mobile menu"></li>
+                    <li class="main-menu-center__logo"><a href="#"><img src="img/logo_icons/casino.svg" alt="main logo"></a></li>
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Bonuses</a></li>
                     <li><a href="#">Promotions</a></li>
                     <li class="more-options">
-                        <button id="more-options-btn" class="more-options__btn secondary">more<span class="more-options__arrow">&#710;</span></button>
+                        <button class="more-options__btn secondary" id="more-options-btn">more<span class="more-options__arrow">&#710;</span></button>
                         <div class="more-options__list hidden">
                             <div class="more-options__option"></div>
                             <div class="more-options__option more-options__option--selected" data-value="0">
@@ -49,7 +52,23 @@
                             <div class="more-options__option" data-value="4">Fourth</div>
                         </div>
                     </li>
+                    <li>
+                        <button class="search__btn"><img src="img/logo_icons/search.svg" alt="search icon"></button>
+                    </li>
                 </ul>
+                <div class="main-menu-center__sign-block">
+                    <ul>
+                        <li>
+                            <button class="sign-in__btn--full secondary">sign in</button>
+                        </li>
+                        <li>
+                            <button class="sign-in__btn--mobile"><img src="img/logo_icons/sign-in-mobile.svg" alt="search icon"></button>
+                        </li>
+                        <li>
+                            <button class="sign-up__btn primary">sign up</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="main-menu-bottom">
                 <ul>
@@ -70,130 +89,18 @@
                 </ul>
             </div>           
         </nav>
-    </div>
-    <div class="container">
-        
+
+        <div class="slider">       
             <div class="wrapper">
                 <div class="shihe-left"></div>
-                <h1 class="offer">Get up to $800<br> +4000 free spins</h1>
+                <h1 class="offer">Get up to $800<br>+4000 free spins</h1>
                 <h3 class="offer__upper-subtitle">Welcome bonus</h3>
-                <h3 class="offer__bottom-subtitle">Demo casino is the best condition for players </h3>
-            </div>
-        
-    </div>
-</header>
+                <h3 class="offer__bottom-subtitle">Demo casino is the best condition<br>for players </h3>
+            </div>      
+        </div>
+    </header>
 
-    <div class="container content">       
-        <div class="showcase">   
-            <div class="showcase__header">
-                <h2 class="showcase__title">Popular games</h2>
-                <button class="showcase__view-all-btn secondary">view all</button>
-            </div>
-            <div class="showcase__grid"> 
-                <div class="showcase__card">
-                    <img src="img/game_cards/thief.png" alt="thief game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/cherry_love.png" alt="cherry love game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/big_bang.png" alt="big bang game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/nian.png" alt="nian game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/iron_man.png" alt="iron man game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/geisha_story.png" alt="geisha story game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/western.png" alt="western game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/azteca.png" alt="azteca game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/thief.png" alt="thief game in online casino">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/pharaons_secret.png" alt="pharaons secret game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/fruiterra_fortune.png" alt="fruiterra fortune game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                <div class="showcase__card">
-                    <img src="img/game_cards/nian.png" alt="nian online game">
-                    <div class="showcase__card-hover">
-                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
-                        <button class="showcase__card-hover-btn secondary">demo</button>
-                        <button class="showcase__card-hover-btn primary">play</button>
-                    </div>
-                </div>
-                
-            </div>
-            <button class="showcase__view-all-btn primary">view all</button>
-        </div>       
-    </div>
-    <img src="img/parts/bg_2_colors.png" class="backgroung" alt="backgroung">
-    <div class="container content new-games">  
-           
+    <div class="content">       
         <div class="showcase">   
             <div class="showcase__header">
                 <h2 class="showcase__title">New games</h2>
@@ -301,15 +208,197 @@
             <button class="showcase__view-all-btn primary">view all</button>
         </div>       
     </div>
-    <img src="img/parts/gold_bottom.png" class="gold-bottom" alt="gold coins">
-    <div class="container">
-        <footer class="footer">
-            <div class="wrapper">
-                <img src="img/parts/footer_1920.jpg" alt="footer">
+    <img src="img/parts/bg_2_colors.png" class="backgroung" alt="backgroung">
+    <div class="content new-games">  
+           
+        <div class="showcase">   
+            <div class="showcase__header">
+                <h2 class="showcase__title">Recommended games</h2>
+                <button class="showcase__view-all-btn secondary">view all</button>
             </div>
-        </header>
+            <div class="showcase__grid"> 
+                <div class="showcase__card">
+                    <img src="img/game_cards/thief.png" alt="thief game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/cherry_love.png" alt="cherry love game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/big_bang.png" alt="big bang game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/nian.png" alt="nian game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/iron_man.png" alt="iron man game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/geisha_story.png" alt="geisha story game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/western.png" alt="western game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/azteca.png" alt="azteca game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/thief.png" alt="thief game in online casino">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/pharaons_secret.png" alt="pharaons secret game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/fruiterra_fortune.png" alt="fruiterra fortune game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                <div class="showcase__card">
+                    <img src="img/game_cards/nian.png" alt="nian online game">
+                    <div class="showcase__card-hover">
+                        <img class="showcase__card-hover-star" src="img/buttons/star_1.svg" alt="add to favourite game button">
+                        <button class="showcase__card-hover-btn secondary">demo</button>
+                        <button class="showcase__card-hover-btn primary">play</button>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="showcase__view-all-btn primary">view all</button>
+        </div>       
     </div>
-    
+    <img src="img/parts/gold_bottom.png" class="gold-bottom" alt="gold coins">
+    <footer>            
+        <div class="wrapper">
+            <div class="footer-menu">
+                <div class="footer-menu__single-col">
+                    <div class="footer-menu__title">Games</div>
+                    <div class="footer-menu__point">Slots</div>
+                    <div class="footer-menu__point">Jackpots</div>
+                    <div class="footer-menu__point">Tabels</div>
+                    <div class="footer-menu__point">Live dillers</div>
+                    <div class="footer-menu__point">Games BTC</div>
+                </div>
+                <div class="footer-menu__single-col">
+                    <div class="footer-menu__title">About</div>
+                    <div class="footer-menu__point">FAQ</div>
+                    <div class="footer-menu__point">About Bitcoin</div>
+                    <div class="footer-menu__point">Instant exchange of BTC to EUR</div>
+                    <div class="footer-menu__point">Checking game results</div>
+                </div>
+                <div class="footer-menu__single-col">
+                    <div class="footer-menu__title">Info</div>
+                    <div class="footer-menu__point">Blog</div>
+                    <div class="footer-menu__point">About us</div>
+                    <div class="footer-menu__point">Terms and Conditions</div>
+                    <div class="footer-menu__point">Bonus Terms and Conditions</div>
+                    <div class="footer-menu__point">Payments</div>
+                    <div class="footer-menu__point">Safe play</div>
+                    <div class="footer-menu__point">Complaints Procedure</div>
+                    <div class="footer-menu__point">Affiliates</div>
+                </div>
+                <div class="footer-menu__single-col">
+                    <div class="footer-menu__title">Promo</div>
+                    <div class="footer-menu__point">Promotions</div>
+                    <div class="footer-menu__point">Slot wars</div>
+                </div>
+                <div class="footer-menu__single-col">
+                    <div class="footer-menu__title">Join us</div>
+                    <div class="footer-menu__social-logos">
+                        <a href="https://www.facebook.com/"><img src="img/socials/facebook.svg" alt="facebook logo"></a>
+                        <a href="https://www.instagram.com/"><img src="img/socials/instagram.svg" alt="instagram logo"></a>
+                        <a href="https://vk.com/"><img src="img/socials/vk.svg" alt="vkontakte logo"></a>
+                        <a href="https://twitter.com/"><img src="img/socials/twitter.svg" alt="twitter logo"></a>
+                        <a href="https://ok.ru/"><img src="img/socials/ok.svg" alt="odnoklassniki logo"></a>
+                        <a href="https://web.telegram.org/"><img src="img/socials/telegram.svg" alt="telegram logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-currencies">
+                <div class="footer-menu__title">Accepted Currencies</div>
+                <img src="img/currencies/bitcoin.svg" alt="bitcoin logo">
+                <img src="img/currencies/litecoin.svg" alt="litecoin logo">
+                <img src="img/currencies/dogecoin.svg" alt="dogecoin logo">
+                <img src="img/currencies/ethereum.svg" alt="ethereum logo">
+                <img src="img/currencies/zcash.svg" alt="zcash logo">
+                <img src="img/currencies/tron.svg" alt="tron logo">
+                <img src="img/currencies/dash.svg" alt="dash logo">
+                <img src="img/currencies/bitcoin_cash.svg" alt="bitcoin-cash logo">
+                <img src="img/currencies/monero.svg" alt="monero logo">
+            </div>
+            <div class="footer-logos">
+                <img src="img/logos/vivogaming.svg" alt="logo">
+                <img src="img/logos/logo_endorphina.svg" alt="logo">
+                <img src="img/logos/kiron.svg" alt="logo">
+                <img src="img/logos/habanero.svg" alt="logo">
+                <img src="img/logos/spinomenal.svg" alt="logo">
+                <img src="img/logos/redrake.svg" alt="logo">
+                <img src="img/logos/join_games.svg" alt="logo">
+                <img src="img/logos/bet_games-tv.svg" alt="logo">
+                <img src="img/logos/microgaming.svg" alt="logo">
+                <img src="img/logos/xpg.svg" alt="logo">
+                <img src="img/logos/tom_horn.svg" alt="logo">
+                <img src="img/logos/inbet.svg" alt="logo">
+            </div>
+            <div class="footer-rights">
+                <img src="img/logos/logo_shield.svg" alt="logo">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatatю Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="script/script.js"></script>
     <script src="script/select_language.js"></script>
     <script src="script/select_more.js"></script>

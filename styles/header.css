@@ -1,0 +1,177 @@
+.slider {
+    background-image: url(../img/parts/banner_full.svg);
+    min-height: 640px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.shihe-left {
+    background: radial-gradient(50% 50% at 50% 50%, #8F00FF 0%, rgba(61, 64, 71, 0) 100%);
+    position: absolute;
+    width: 1246px;
+    height: 306px;
+    left: -246px;
+    top: 100px;
+}
+
+.offer {
+    font-family: "MullerBoldItalic", sans-serif;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 94px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    left: 120px;
+    top: 189px;
+}
+
+.offer__upper-subtitle {
+    font-family: "MullerMedium", sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgba(0, 255, 209, 1);
+    position: absolute;
+    left: 120px;
+    top: 89px;
+}
+
+.offer__bottom-subtitle {
+    font-family: "MullerMedium", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    position: absolute;
+    left: 120px;
+    top: 393px;
+    color: #AFABCA;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider {
+        min-height: 446px;
+        background-image: url(../img/parts/banner_medium.jpg);
+    }
+
+    .offer {
+        font-size: 48px;
+        line-height: 62px;
+        left: 75px;
+        top: 100px;
+    }
+
+    .offer__upper-subtitle {
+        top: 33px;
+        left: 76px;
+    }
+
+    .offer__bottom-subtitle {
+        top: 200px;
+        left: 76px;
+    }
+
+    .shihe-left {
+        width: 775px;
+        height: 190px;
+        top: 70px;
+        left: -49px;
+    }
+
+    .showcase {
+        max-width: 918px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        min-height: 50vw;
+        background-image: url(../img/parts/banner_medium.jpg);
+        background-position: center;
+    }
+
+    .offer {
+        font-size: 4.68vw;
+        line-height: 6.12vw;
+        left: 35px;
+        top: 100px;
+    }
+
+    .offer__upper-subtitle {
+        font-size: 3.12vw;
+        top: 33px;
+        left: 35px;
+    }
+
+    .offer__bottom-subtitle {
+        display: none;
+    }
+
+    .shihe-left {
+        width: 478px;
+        height: 190px;
+        background: radial-gradient(50% 50% at 50% 50%, #140035 0%, rgba(38, 16, 116, 0) 100%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider {
+        min-height: 50vw;
+    }
+
+    .offer {
+        max-width: 46%;
+        font-size: 5vw;
+        line-height: 6.12vw;
+        left: 7vw;
+        top: calc(18vw + 15px);
+    }
+
+    .offer__upper-subtitle {
+        font-size: 3.12vw;
+        top: 33px;
+        left: 7vw;
+    }
+
+    .shihe-left {
+        height: 160px;
+        width: 223px;
+        left: -24px;
+        top: -12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .offer {
+        font-size: 18px;
+        line-height: 23px;
+        top: 63px;
+    }
+
+    .offer__upper-subtitle {
+        font-size: 12px;
+        line-height: 12px;
+        top: 28px;
+    }
+
+    .shihe-left {
+        height: 160px;
+        width: 223px;
+        left: -24px;
+        top: -12px;
+    }
+}

@@ -1,0 +1,208 @@
+.footer {
+    background: #07062E;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-menu__single-col {
+    padding-left: 30px;
+}
+
+.footer-menu__social-logos {
+    margin-left: -9px;
+}
+
+.footer-menu__social-logos a:nth-child(-n + 5) {
+    margin-right: 6px;
+}
+
+.footer-menu__title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #fefefe;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer-menu__point {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #afabca;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.footer-currencies {
+    max-width: 1670px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.footer-currencies img {
+    margin-right: 40px;
+}
+
+.footer-logos {
+    max-width: 1660px;
+    margin: 27px auto;
+    display: grid;
+    grid: 96px 96px / repeat(6, 160px);
+    justify-content: space-between;
+}
+
+.footer-logos img {
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-rights {
+    max-width: 1660px;
+    margin: 27px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-rights p {
+    align-self: start;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 1800px) {
+    .footer-menu {
+        grid: auto auto / repeat(4, 300px);
+    }
+
+    .footer-menu .footer-menu__single-col:nth-child(-n + 3) {
+       grid-row: 1 / span 2;
+    }
+
+    .footer-currencies, 
+    .footer-logos,
+    .footer-rights {
+        max-width: 1320px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-menu {
+        gap: 0;
+    }
+
+    .footer-menu__social-logos img:nth-child(-n + 6) {
+        margin-right: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-currencies, 
+    .footer-logos,
+    .footer-rights {
+        max-width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-menu {
+        margin: 0 5%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "child-one child-two"
+            "child-three child-four"
+            "child-three child-five";
+    }
+
+    .footer-menu .footer-menu__single-col:nth-child(1) {
+        grid-area: child-one;
+    }
+    .footer-menu .footer-menu__single-col:nth-child(2) {
+        grid-area: child-two;
+    }
+    .footer-menu .footer-menu__single-col:nth-child(3) {
+        grid-area: child-three;
+    }
+    .footer-menu .footer-menu__single-col:nth-child(4) {
+        grid-area: child-four;
+    }
+    .footer-menu .footer-menu__single-col:nth-child(5) {
+        grid-area: child-five;
+    }
+
+    .footer-menu__social-logos img:nth-child(-n + 5) {
+        margin-right: 6px;
+    }
+
+    .footer-currencies, 
+    .footer-logos,
+    .footer-rights {
+        margin: 0 5%;
+    }
+
+    .footer-currencies img {
+        margin-right: 5%;
+    }
+
+    .footer-currencies img:last-child {
+        margin-right: 0;
+    }
+
+    .footer-logos {
+        grid: 96px 96px 96px / repeat(4, 160px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-logos {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-rows: auto;
+    } 
+
+    .footer-currencies, 
+    .footer-logos,
+    .footer-rights {
+        margin: 20px 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-menu {
+        width: 85%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "child-one"
+        "child-two"
+        "child-three" 
+        "child-four"
+        "child-five";
+    }
+    .footer-rights {
+        grid-template-columns: auto;
+    }
+
+    .footer-rights img {
+        justify-self: center;
+    }
+}

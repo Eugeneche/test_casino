@@ -1,6 +1,5 @@
 .main-menu {
     margin-left: -20px;
-    
 }
 
 .main-menu li {
@@ -103,13 +102,17 @@ select[id="languages"] {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+.main-menu-center__hamburger, .sign-in__btn--mobile {
+    display: none;
+}
+
 .main-menu-top__left-block, .main-menu-center__left-block{
     display: flex;
     height: 100%;
 }
 
 .main-menu-center a {
-    margin-right: 60px;
+    margin-right: 40px;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -154,6 +157,11 @@ select[id="languages"] {
     background: linear-gradient(270.16deg, #00B2FF 0.11%, #8F00FF 99.83%);
  }
 
+.sign-up__btn {
+    width: 160px !important;
+    /* the style for this button previously is defined in content.css as primary style */
+ }
+
 /* =========== bottom menu ================= */
 
 .main-menu-bottom {
@@ -182,8 +190,65 @@ select[id="languages"] {
 
 /* ====================== */
 
+@media screen and (max-width: 1200px) {
+    .main-menu-center__left-block li:nth-child(n + 3):nth-last-child(n + 2) {
+        display: none;
+    }
+
+    .main-menu-center a {
+        margin-right: 0;
+    }
+
+    .main-menu-center__hamburger {
+        display: block;
+    }
+
+    .search__btn img {
+        width: 66px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu-top a {
+        margin-right: 40px;
+    }
+
+    .sign-in__btn--full {
+        display: none;
+    }
+
+    .sign-in__btn--mobile {
+        display: block;
+    }
+
+    .sign-up__btn {
+        width: 100px !important; 
+        /* the style for this button previously is defined in content.css as primary style */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ul.main-menu-top__left-block, .main-menu-center__logo {
+        display: none;
+    }
+
+    .main-menu-top {
+        justify-content: flex-end;
+    }
+
+    .main-menu-center__left-block li:nth-child(n) {
+        margin-right: 0;
+    }
+
+    .main-menu-center__sign-block ul {
+        padding-left: 0;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     .main-menu-top, .main-menu-center, .main-menu-bottom {
         padding: 0 calc((100% - 1920px) / 2);
     }
 }
+
+
